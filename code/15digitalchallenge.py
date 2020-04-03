@@ -130,26 +130,28 @@ class puzzle15(object):
             print("step:{}".format(i))
             print(v)
 
-# hard
-target1 = np.asarray(
-    [[1,2,3,4],
-    [5,6,7,8],
-    [9,10,11,12],
-    [13,14,15,0]])
-# simple
-target2 = np.asarray(
-    [[11, 9, 4, 15],
-    [0, 5 ,3, 12],
-    [1, 7, 8, 6],
-    [13, 2, 10, 14]])
-start     = np.asarray(
-    [[11, 9, 4, 15],
-    [1, 3 ,0, 12],
-    [7, 5, 8, 6],
-    [13, 2, 10, 14]])
-opens = {}
-closed = []
 
-modle = puzzle15(start, opens, closed, target1)
-modle.search()
+if __name__ == "__main__":
+    # hard
+    target1 = np.asarray(
+        [[1,2,3,4],
+        [5,6,7,8],
+        [9,10,11,12],
+        [13,14,15,0]])
+    # simple
+    target2 = np.asarray(
+        [[11, 9, 4, 15],
+        [0, 5 ,3, 12],
+        [1, 7, 8, 6],
+        [13, 2, 10, 14]])
+    start     = np.asarray(
+        [[11, 9, 4, 15],
+        [1, 3 ,0, 12],
+        [7, 5, 8, 6],
+        [13, 2, 10, 14]])
+    opens = {}
+    closed = []
+
+    modle = puzzle15(start, opens, closed, target1)
+    modle.search()
 
