@@ -1,4 +1,4 @@
-# code by:jack chen
+# code by:skQuat(jack chen)
 # 根据启发式搜索实现15数码问题的求解
 
 
